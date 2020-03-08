@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Muli:400,500,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, a {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-family: "Muli", sans-serif;
+  color: #BEBEBE;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header__nav {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8F0EFF;
+}
+.header__nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: left;
+}
+.header__nav li {
+  margin: 0 2em;
+  list-style: none;
+  text-align: center;
+}
+.header__nav li:hover a {
+  border-bottom: 3px solid #8F0EFF;
+  padding-bottom: 10px;
+  color: #8F0EFF;
+}
+.header__nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000000;
+}
+.header__user {
+  text-align: right;
+  padding-right: 7%;
+}

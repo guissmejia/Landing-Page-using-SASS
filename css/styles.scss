@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Muli:400,500,600&display=swap');
+
+$title-fonts: 'Lato', sans-serif;
+$paragraph-fonts: 'Muli', sans-serif;
+$color-title-hover: #8F0EFF;
+$paragraph-color: #BEBEBE;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,a{
+  font-family: $title-fonts;
+}
+
+p{
+  font-family: $paragraph-fonts;
+  color: $paragraph-color;
+}
+
+.header{
+  width: 100%;
+  height: auto;
+  padding: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__nav{
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-title-hover;
+  }
+  &__nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: left;
+  }
+  &__nav li{
+    margin: 0 2em;
+    list-style: none;
+    text-align: center;
+  }
+  &__nav li:hover a{
+    border-bottom: 3px solid $color-title-hover;
+    padding-bottom: 10px;
+    color: $color-title-hover;
+  }
+  &__nav a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+  }
+  &__user{
+    text-align: right;
+    padding-right: 7%;
+  }
+}
